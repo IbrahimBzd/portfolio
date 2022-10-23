@@ -1,0 +1,11 @@
+.home {
+  background: url("../../../assets/svgs/homeBg.svg");
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  min-height: 500px;
+  display: flex;
+  justify-content: flex-start;
+}

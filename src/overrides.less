@@ -1,0 +1,112 @@
+@primary-focus-color: #7049DD;
+@primary-hover-color: #926FF4;
+
+.ant-form-item-label
+  > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+  color: black;
+}
+.ant-btn {
+  border-radius: 5px;
+  width: 160px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ant-tag {
+  padding: 6px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #a6d6b926;
+  margin: 0 2px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  letter-spacing: 0.01em;
+  .ant-form-item-label
+    > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+    color: black;
+  }
+}
+
+.ant-tag.status-tag {
+  padding: 5px 0;
+  width: 86px;
+  font-weight: 400;
+  margin: 0;
+  color: #ffffff;
+}
+
+.ant-table-thead > tr > th,
+.ant-table-tbody > tr.ant-table-row:hover > td,
+.ant-table-tbody > tr > td.ant-table-cell-row-hover {
+  background: #ffffff;
+}
+
+.ant-table-tbody > tr > td {
+  border-bottom: none;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  letter-spacing: 0.01em;
+}
+
+.ant-table-tbody > tr > td:first-child,
+.ant-table-thead > tr > th:first-child {
+  padding-left: 45px;
+}
+
+.ant-table-thead > tr > th {
+  font-family: 'lato', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+.ant-table-container table > thead > tr:first-child th:last-child {
+  padding: 1rem 0.625rem;
+}
+//table pagination
+
+.ant-table-pagination.ant-pagination {
+  margin-right: 0.875rem;
+}
+
+.ant-pagination-item {
+  font-family: 'lato', sans-serif;
+}
+
+// fix  antd pagination next and prev style
+.ant-pagination-item-link {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+// fix antd pagesize selector
+.ant-pagination-options .ant-select-selector {
+  height: 32px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.ant-btn-primary:focus {
+  border-color: @primary-color;
+  background: @primary-color;
+}
+
+.ant-btn-primary:hover {
+  border-color: @primary-hover-color;
+  background: @primary-hover-color;
+}
