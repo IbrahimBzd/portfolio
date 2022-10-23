@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.ed17e348.css",
-    "main.js": "/portfolio/static/js/main.402a34a8.js",
+    "main.js": "/portfolio/static/js/main.a1468a05.js",
     "static/css/42.a64ed4d2.chunk.css": "/portfolio/static/css/42.a64ed4d2.chunk.css",
-    "static/js/42.d05b15bf.chunk.js": "/portfolio/static/js/42.d05b15bf.chunk.js",
-    "static/js/787.4f7d4d51.chunk.js": "/portfolio/static/js/787.4f7d4d51.chunk.js",
-    "static/js/116.dd7ebff8.chunk.js": "/portfolio/static/js/116.dd7ebff8.chunk.js",
+    "static/js/42.22fdbada.chunk.js": "/portfolio/static/js/42.22fdbada.chunk.js",
+    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/js/116.1999aea2.chunk.js": "/portfolio/static/js/116.1999aea2.chunk.js",
     "static/media/AnimeHubCard.svg": "/portfolio/static/media/AnimeHubCard.f7e49810f4591621840fcbcadfe8eede.svg",
     "static/media/prjct1card.svg": "/portfolio/static/media/prjct1card.a155c2f1dd7c8218e855409ac8ff71d2.svg",
     "static/media/Poppins-Bold.ttf": "/portfolio/static/media/Poppins-Bold.266c2af2fa67dafa3c34.ttf",
@@ -16,14 +16,14 @@
     "index.html": "/portfolio/index.html",
     "static/media/homeBg.svg": "/portfolio/static/media/homeBg.347affce5ee614d819bb.svg",
     "main.ed17e348.css.map": "/portfolio/static/css/main.ed17e348.css.map",
-    "main.402a34a8.js.map": "/portfolio/static/js/main.402a34a8.js.map",
+    "main.a1468a05.js.map": "/portfolio/static/js/main.a1468a05.js.map",
     "42.a64ed4d2.chunk.css.map": "/portfolio/static/css/42.a64ed4d2.chunk.css.map",
-    "42.d05b15bf.chunk.js.map": "/portfolio/static/js/42.d05b15bf.chunk.js.map",
-    "787.4f7d4d51.chunk.js.map": "/portfolio/static/js/787.4f7d4d51.chunk.js.map",
-    "116.dd7ebff8.chunk.js.map": "/portfolio/static/js/116.dd7ebff8.chunk.js.map"
+    "42.22fdbada.chunk.js.map": "/portfolio/static/js/42.22fdbada.chunk.js.map",
+    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map",
+    "116.1999aea2.chunk.js.map": "/portfolio/static/js/116.1999aea2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ed17e348.css",
-    "static/js/main.402a34a8.js"
+    "static/js/main.a1468a05.js"
   ]
 }
