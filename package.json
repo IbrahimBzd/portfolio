@@ -1,7 +1,7 @@
 {
   "homepage": "http://IbrahimBzd.github.io/portfolio",
-  "name": "xquiz",
-  "version": "0.1.0",
+  "name": "portfolio",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "predeploy": "npm run build",

@@ -1,5 +1,5 @@
 export default {
   page: {
-    path: '/',
+    path: '/portfolio',
   },
 };
