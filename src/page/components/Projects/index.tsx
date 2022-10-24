@@ -2,9 +2,9 @@ import * as React from 'react';
 import './styles.scss';
 import { projectsMock } from '../../data/projects';
 
-function Projects() {
+function Projects({ referance }) {
   return (
-    <div className="pt-20 sm:pl-28 pl-12">
+    <div ref={referance} className="pt-20 sm:pl-28 pl-12">
       <h1
         className="font-[Poppins] font-bold text-primary lg:text-6xl xs:text-5xl
         text-4xl xs:mb-14 mb-6"
@@ -26,17 +26,25 @@ function Projects() {
               alt="project 1"
               className="h-full w-full"
             />
-            <a href={prjct?.url} target={prjct?.url && '_blank'}>
-              <div
-                className="absolute top-0 h-full w-full left-0 flex
+            <div
+              className="absolute top-0 h-full w-full left-0 flex
               flex-col justify-around  px-4 project-card-content"
+            >
+              <h1 className="text-white text-2xl w-max project-card-content-elem">
+                {prjct?.name}
+              </h1>
+              <p className="w-full text-base text-white project-card-content-elem">
+                {prjct?.description}
+              </p>
+
+              <a
+                className="text-lg text-white "
+                href={prjct?.url}
+                target={prjct?.url && '_blank'}
               >
-                <h1 className="text-white text-2xl w-max ">{prjct?.name}</h1>
-                <p className="w-full text-base text-white">
-                  {prjct?.description}
-                </p>
-              </div>
-            </a>
+                Visit Link
+              </a>
+            </div>
           </div>
         ))}
       </div>

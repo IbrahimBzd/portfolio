@@ -10,10 +10,10 @@ function TipModal({ className, isModalVisisble = true }) {
     >
       <h1 className="text-white sm:text-2xl text-lg">Tip</h1>
       <div className="text-white sm:text-lg text-sm">
-        - Click on 'C' to close the sideBar manu
+        - Hold shift key & click 'c' to close the sideBar manu
       </div>
       <div className="text-white sm:text-lg text-sm">
-        - Click on 'O' to open the sideBar manu
+        - Hold shift key & click 'o' to open the sideBar manu
       </div>
     </div>
   );

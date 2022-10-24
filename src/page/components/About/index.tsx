@@ -1,9 +1,9 @@
 import * as React from 'react';
 import AboutSticker from '../../../assets/imgs/aboutStickers.png';
 
-function About() {
+function About({ referance }) {
   return (
-    <div className="pt-32 sm:pl-28 pl-12">
+    <div ref={referance} className="pt-32 sm:pl-28 pl-12">
       <h1
         className="font-[Poppins] font-bold text-primary lg:text-6xl xs:text-5xl
         text-4xl xs:mb-14 mb-6"

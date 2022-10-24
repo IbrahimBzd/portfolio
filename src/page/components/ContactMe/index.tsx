@@ -2,7 +2,7 @@ import * as React from 'react';
 import './styles.scss';
 import SendIcon from '../../../assets/icons/SendIcon';
 
-function ContactMe() {
+function ContactMe({ referance }) {
   const [inputVal, setInputVal] = React.useState('');
   const [currentColor, setCurrentColor] = React.useState('#A3A3A3');
   React.useEffect(() => {
@@ -13,7 +13,7 @@ function ContactMe() {
     }
   }, [inputVal]);
   return (
-    <div className="pt-20 sm:pl-28 pl-12">
+    <div ref={referance} className="pt-20 sm:pl-28 pl-12">
       <h1
         className="font-[Poppins] font-bold text-primary lg:text-5xl xs:text-4xl
         text-3xl xs:mb-14 mb-6"

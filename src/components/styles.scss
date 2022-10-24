@@ -11,14 +11,13 @@
 
 .side-menu {
   overflow: hidden;
-  height: calc(100vh - 56px);
+  height: calc(100vh - 60px);
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
 
 .menu-icon {
   transition: 0.4s;
-  border-radius: 100px;
   overflow: visible;
 }
 
@@ -31,7 +30,6 @@
 
 .toggle-menu-icon {
   transition: 0.4s;
-  border-radius: 100px;
   overflow: visible;
 }
 
