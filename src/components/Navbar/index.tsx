@@ -5,10 +5,17 @@ import { Context } from '../../core/Context';
 import './styles.scss';
 import { formattedMessages } from '../../utils/formattedMessages';
 import MenuIcon from '../../assets/Icons/Menu';
+import ArrowUp from '../../assets/Icons/ArrowUp';
 
 const { Header } = Layout;
 
-function NavbarManu({ mode }) {
+function NavbarManu({
+  mode,
+  setVisible,
+}: {
+  mode: any;
+  setVisible?: React.Dispatch<React.SetStateAction<boolean>>;
+}) {
   const { t, i18n } = useTranslation();
   const changeLanguageHandler = () => {
     switch (i18n.language) {
@@ -28,14 +35,20 @@ function NavbarManu({ mode }) {
     ref.current?.scrollIntoView({
       behavior: 'smooth',
     });
+    setTimeout(() => {
+      setVisible(false);
+    }, 500);
   }
 
   return (
     <Menu
+      defaultSelectedKeys={['0']}
       className="!bg-transparent navbar !flex-auto !justify-end"
       mode={mode}
     >
-      <Menu.Item key="0">{t(formattedMessages.home)}</Menu.Item>
+      <Menu.Item key="0" onClick={() => OnClick(refsContext.homeRef)}>
+        {t(formattedMessages.home)}
+      </Menu.Item>
       <Menu.Item key="1" onClick={() => OnClick(refsContext.aboutRef)}>
         {t(formattedMessages.about)}
       </Menu.Item>
@@ -50,10 +63,10 @@ function NavbarManu({ mode }) {
       </Menu.Item>
       <Menu.Item key="5" className="lang" onClick={changeLanguageHandler}>
         <span className="font-inter !font-bold text-lg md:text-base">
-          {i18n.language === 'en-US' || 'en' ? 'en ' : 'fr '}
+          {`${i18n.language} `}
         </span>
         <span className="font-inter !font-bold text-lg md:text-base">
-          /{i18n.language === 'fr' ? ' en' : ' fr'}
+          /{i18n.language === 'fr' ? ' en' : ' fr '}
         </span>
       </Menu.Item>
     </Menu>
@@ -73,7 +86,7 @@ function Navbar() {
 
   return (
     <Layout className="!bg-transparent">
-      <Header className="!bg-transparent !py-0 !px-2 xs:!px-2 sm:!px-4 lg:!px-12 !mx-0">
+      <Header className="!bg-transparent !p-0 !mx-0 navbar-header">
         <Row justify="space-between" align="middle" className="!flex-nowrap">
           <span className="font-inter font-semibold text-2xl sm:text-3xl lg:text-4xl text-white block ">
             Ibrahim.
@@ -97,8 +110,9 @@ function Navbar() {
           onClose={onClose}
           visible={visible}
           className="navbar-menu"
+          closeIcon={<ArrowUp currentcolor="#888" />}
         >
-          <NavbarManu mode="vertical" />
+          <NavbarManu setVisible={setVisible} mode="vertical" />
         </Drawer>
       </Header>
     </Layout>

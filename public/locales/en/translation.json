@@ -5,5 +5,17 @@
     "services": "Services",
     "projects": "Projects",
     "contact": "Contact me"
+  },
+  "home": {
+    "hello": "Hello, It's me",
+    "andIm": "And I'm a",
+    "fullstackDev": "Fullstack Developer",
+    "homeParag": "Welcome to my Fullstack Developer Portfolio, a space where my passion for technology and creativity converge.",
+    "downloadCv": "Download CV"
+  },
+  "about": {
+    "hello": "Hello",
+    "firstParag": ", I'm Ibrahim Drissi El Bouzaidi, a passionate ",
+    "secondParag": "on a perpetual quest to create innovative digital experiences. With a strong foundation in both front-end aesthetics and back-end functionality, I'm driven by the desire to build web solutions that not only look great but also perform awlessly. My journey in the world of technology has been a fascinating one, filled with continuous learning and exploration. I thrive on challenges, problem-solving, and staying up-to-date with the ever-evolving tech landscape."
   }
 }

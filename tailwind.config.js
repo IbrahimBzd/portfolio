@@ -14,13 +14,16 @@ module.exports = {
         xxl: '1600px',
       },
       colors: {
-        primary: '#0D1321',
-        secondary: '#FFBE0A',
+        primary: '#FFBE0A',
+        secondary: '#0D1321',
         tertiary: '#20242D',
       },
       fontFamily: {
         inter: 'Inter',
         'dm-serif': 'DM Serif Display',
+      },
+      boxShadow: {
+        custom: '0px 0px 10px 3px rgba(255,190,10,0.5);',
       },
     },
   },
