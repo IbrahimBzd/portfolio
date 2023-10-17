@@ -4,7 +4,7 @@ import AppRouting from '../Routing';
 
 function ProtectedApp() {
   return (
-    <div>
+    <div className="scroll-y-aut">
       <AppRouting routes={globalRoutes.APP_ROUTES_CONFIG} />
     </div>
   );

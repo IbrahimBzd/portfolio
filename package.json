@@ -1,11 +1,8 @@
 {
-  "homepage": "http://IbrahimBzd.github.io/portfolio",
-  "name": "portfolio",
-  "version": "0.0.1",
+  "name": "Portfolio",
+  "version": "0.0.2",
   "private": true,
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "node scripts/start",
     "build": "node scripts/build",
     "test": "node scripts/test",
@@ -41,7 +38,6 @@
     "eslint-webpack-plugin": "^3.1.1",
     "file-loader": "^6.2.0",
     "fs-extra": "^10.0.0",
-    "gh-pages": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
     "husky": "4",
     "identity-obj-proxy": "^3.0.0",
@@ -91,7 +87,6 @@
     "i18next-http-backend": "^1.4.0",
     "less": "^4.1.2",
     "less-loader": "^10.2.0",
-    "localstorage-slim": "^2.3.0",
     "lodash": "^4.17.21",
     "oidc-client": "^1.11.5",
     "prompts": "^2.4.2",
@@ -99,11 +94,11 @@
     "qs": "^6.10.3",
     "react": "^17.0.2",
     "react-app-polyfill": "^3.0.0",
-    "react-async-states": "1.0.0-rc-3",
-    "react-confetti": "^6.1.0",
     "react-dom": "^17.0.2",
+    "react-elastic-carousel": "^0.11.5",
     "react-i18next": "^11.16.9",
     "react-router-dom": "^6.2.2",
+    "styled-components": "^6.0.5",
     "web-vitals": "^2.1.0"
   },
   "husky": {

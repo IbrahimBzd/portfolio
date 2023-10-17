@@ -1,17 +1,17 @@
 import * as React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import { XQuizRoute } from '../types';
-import { PageRouteConfig } from '../page/rout';
+import { PortfolioRoute } from '../types';
+import { PageRouteConfig } from '../pages/rout';
 
 type AppRoutingProps = {
   routes: string;
 };
 
-function renderRouteElement(config: XQuizRoute<any>) {
+function renderRouteElement(config: PortfolioRoute<any>) {
   return React.createElement(config.Component, config.ComponentProps);
 }
 
-function makeRoutePropsFromConfig(config: XQuizRoute<any>) {
+function makeRoutePropsFromConfig(config: PortfolioRoute<any>) {
   return {
     path: config.path,
     element: renderRouteElement(config),

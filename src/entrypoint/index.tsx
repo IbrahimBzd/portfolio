@@ -1,11 +1,11 @@
 import * as React from 'react';
 import AppProviders from './Providers';
-import ProtectedApp from './ProtectedApp';
 import './App.scss';
+import ProtectedApp from './ProtectedApp';
 
 export default function App() {
   return (
-    <React.Suspense fallback="loading...">
+    <React.Suspense fallback="Loading...">
       <AppProviders>
         <ProtectedApp />
       </AppProviders>

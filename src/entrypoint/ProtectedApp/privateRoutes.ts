@@ -1,5 +1,5 @@
 export default {
-  page: {
-    path: '/portfolio',
-  },
+  app: Object.freeze({
+    path: '/*',
+  }),
 };
