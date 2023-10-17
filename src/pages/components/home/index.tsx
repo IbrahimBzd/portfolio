@@ -1,12 +1,12 @@
 import * as React from 'react';
 import { useTranslation } from 'react-i18next';
-import FacebookIcon from '../../../assets/Icons/FacebookIcon';
 import CustomButton from '../../../components/CustomButton';
-import { formattedMessages } from '../../../utils/formattedMessages';
-import homeSticker from '../../../assets/svgs/homeSticker.svg';
-import LinkedInIcon from '../../../assets/Icons/LinkedInIcon';
-import InstagramIcon from '../../../assets/Icons/InstagramIcon';
 import WhatsappIcon from '../../../assets/Icons/WhatsappIcon';
+import FacebookIcon from '../../../assets/Icons/FacebookIcon';
+import LinkedInIcon from '../../../assets/Icons/LinkedInIcon';
+import homeSticker from '../../../assets/svgs/homeSticker.svg';
+import InstagramIcon from '../../../assets/Icons/InstagramIcon';
+import { formattedMessages } from '../../../utils/formattedMessages';
 
 function Home() {
   const { t } = useTranslation();
@@ -29,18 +29,30 @@ function Home() {
           {t(formattedMessages.homeParag)}
         </p>
         <div className="flex gap-4 pb-6 pt-2">
-          <div className="w-fit bg-tertiary rounded-full p-2 hover:cursor-pointer hover:scale-110 transition-all">
-            <FacebookIcon className="w-7 h-7" />
-          </div>
-          <div className="w-fit bg-tertiary rounded-full p-2 hover:cursor-pointer hover:scale-110 transition-all">
-            <LinkedInIcon className="w-7 h-7" />
-          </div>
+          <a
+            target="_blank"
+            href="https://www.facebook.com/ibrahim.drissi.129?_rdc=1&_rdr"
+          >
+            <div className="w-fit bg-tertiary rounded-full p-2 hover:cursor-pointer hover:scale-110 transition-all">
+              <FacebookIcon className="w-7 h-7" />
+            </div>
+          </a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/ibrahim-drissi-424838244?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          >
+            <div className="w-fit bg-tertiary rounded-full p-2 hover:cursor-pointer hover:scale-110 transition-all">
+              <LinkedInIcon className="w-7 h-7" />
+            </div>
+          </a>
           <div className="w-fit bg-tertiary rounded-full p-2 hover:cursor-pointer hover:scale-110 transition-all">
             <InstagramIcon className="w-7 h-7" />
           </div>
-          <div className="w-fit bg-tertiary rounded-full p-2 hover:cursor-pointer hover:scale-110 transition-all">
-            <WhatsappIcon className="w-7 h-7" />
-          </div>
+          <a target="_blank" href="https://wa.me/212619548744">
+            <div className="w-fit bg-tertiary rounded-full p-2 hover:cursor-pointer hover:scale-110 transition-all">
+              <WhatsappIcon className="w-7 h-7" />
+            </div>
+          </a>
         </div>
         <CustomButton text={t(formattedMessages.downloadCv)} />
       </div>

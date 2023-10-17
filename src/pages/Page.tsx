@@ -5,6 +5,7 @@ import { Context } from '../core/Context';
 import Home from './components/home';
 import About from './components/about';
 import BackgrounderComponent from '../components/BackgroundedCompnent';
+import Services from './components/services';
 
 function Page() {
   const homeRef = React.useRef();
@@ -35,6 +36,7 @@ function Page() {
           <BackgrounderComponent>
             <About reference={aboutRef} />
           </BackgrounderComponent>
+          <Services reference={servicesRef} />
         </div>
         <div className="main opacity-30 z-[-1]" />
       </div>

@@ -1,4 +1,7 @@
 {
+  "general": {
+    "my": "My"
+  },
   "navbar": {
     "home": "Home",
     "about": "About",
@@ -16,6 +19,22 @@
   "about": {
     "hello": "Hello",
     "firstParag": ", I'm Ibrahim Drissi El Bouzaidi, a passionate ",
-    "secondParag": "on a perpetual quest to create innovative digital experiences. With a strong foundation in both front-end aesthetics and back-end functionality, I'm driven by the desire to build web solutions that not only look great but also perform awlessly. My journey in the world of technology has been a fascinating one, filled with continuous learning and exploration. I thrive on challenges, problem-solving, and staying up-to-date with the ever-evolving tech landscape."
+    "secondParag": "on a perpetual quest to create innovative digital experiences. With a strong foundation in both front-end aesthetics and back-end functionality, I'm driven by the desire to build web solutions that not only look great but also perform awlessly."
+  },
+  "services": {
+    "title1": "Web Application Development:",
+    "content1": "I specialize in designing and building custom web applications tailored to your specific needs. From concept to deployment, I'll ensure your application is user-friendly, visually appealing, and highly functional.",
+    "title2": "Front-end Development:",
+    "content2": "Crafting captivating user interfaces (UI) is my forte. I can create responsive, interactive, and engaging front-end designs using technologies like HTML, CSS, and JavaScript.",
+    "title3": "Back-end Development:",
+    "content3": "I have expertise in server-side development, ensuring that your web applications run smoothly. With Spring Boot, and databases like PostgreSql or MongoDB, I can handle the server logic, databases, and APIs.",
+    "title4": "Fullstack Development:",
+    "content4": "I bring it all together, offering end-to-end development services. From the user interface to server logic and everything in between, I create a seamless user experience.",
+    "title5": "Mobile-Responsive Design:",
+    "content5": "In the mobile-first era, I can make your web applications and websites responsive, providing an optimal user experience on all devices, including smartphones and tablets.",
+    "title6": "Consultation and Collaboration:",
+    "content6": "I believe in collaborative development. I'm here to listen to your ideas, provide insights, and work closely with you to transform your vision into a digital reality. Let's discuss your project, troubleshoot issues, and find solutions together.",
+    "title7": "Design:",
+    "content7": "As a dedicated and passionate designer, I pride myself on offering a bespoke design service tailored to meet the distinct needs of each client. With a keen eye for detail and an intrinsic understanding of aesthetic nuances, I work closely with you to bring your vision to life."
   }
 }

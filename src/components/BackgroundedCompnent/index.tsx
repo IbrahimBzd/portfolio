@@ -8,7 +8,7 @@ export default function BackgrounderComponent({
   return (
     <div className="bg-tertiary">
       <div className="flex flex-col justify-start items-center">
-        <div className="arrow-down" />
+        <div className="arrow-down-secondary" />
         {children}
       </div>
     </div>

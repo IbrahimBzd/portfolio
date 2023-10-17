@@ -8,7 +8,7 @@ export default function About({ reference }) {
   return (
     <div
       ref={reference}
-      className=" w-full px-5 md:px-12 lg:px-28 py-5 sm:py-10 flex flex-col lg:flex-row justify-start items-center gap-8"
+      className="w-full px-5 md:px-12 lg:px-28 pt-5 pb-10 sm:pt-10 sm:pb-20 flex flex-col lg:flex-row justify-start items-center gap-8"
     >
       <span className="w-fit lg:w-4/12 flex items-center justify-center">
         <img
