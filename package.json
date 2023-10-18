@@ -1,7 +1,6 @@
 {
   "name": "Portfolio",
   "version": "0.0.2",
-  "homepage": "https://ibrahimBzd.github.io/portfolio",
   "private": true,
   "scripts": {
     "predeploy": "npm run build",
