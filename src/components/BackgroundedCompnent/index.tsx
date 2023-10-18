@@ -6,9 +6,8 @@ export default function BackgrounderComponent({
   children: JSX.Element;
 }) {
   return (
-    <div className="bg-tertiary">
-      <div className="flex flex-col justify-start items-center">
-        <div className="arrow-down-secondary" />
+    <div className="w-full">
+      <div className="flex flex-col justify-start items-center bg-tertiary">
         {children}
       </div>
     </div>

@@ -1,11 +1,11 @@
 import * as React from 'react';
 
 export function ElementOnScreenAnimation({
-  elem,
+  children,
   transition = '900ms ease-in-out',
-  translate = '0rem 6rem',
+  translate = '6rem 0rem',
 }: {
-  elem: any;
+  children: JSX.Element;
   transition?: string;
   translate?: string;
 }) {
@@ -41,12 +41,13 @@ export function ElementOnScreenAnimation({
     <div
       ref={ref}
       style={{
+        width: '100%',
         opacity: onScreen ? 1 : 0,
         translate: onScreen ? 'none' : translate,
         transition,
       }}
     >
-      {elem}
+      {children}
     </div>
   );
 }

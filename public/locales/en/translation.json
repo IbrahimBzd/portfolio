@@ -1,12 +1,13 @@
 {
   "general": {
-    "my": "My"
+    "my": "My",
+    "visit": "Visit"
   },
   "navbar": {
-    "home": "Home",
     "about": "About",
     "services": "Services",
     "projects": "Projects",
+    "skills": "Skills",
     "contact": "Contact me"
   },
   "home": {

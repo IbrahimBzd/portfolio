@@ -3,7 +3,7 @@ import { IconProps } from '../../types';
 
 export default function LinkedInIcon({
   className,
-  currentcolor = '#FFBE0A',
+  currentcolor = '#FFCE89',
 }: IconProps) {
   return (
     <svg

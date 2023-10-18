@@ -42,21 +42,20 @@ function NavbarManu({
 
   return (
     <Menu
-      defaultSelectedKeys={['0']}
       className="!bg-transparent navbar !flex-auto !justify-end"
       mode={mode}
     >
-      <Menu.Item key="0" onClick={() => OnClick(refsContext.homeRef)}>
-        {t(formattedMessages.home)}
-      </Menu.Item>
-      <Menu.Item key="1" onClick={() => OnClick(refsContext.aboutRef)}>
+      <Menu.Item key="0" onClick={() => OnClick(refsContext.aboutRef)}>
         {t(formattedMessages.about)}
       </Menu.Item>
-      <Menu.Item key="2" onClick={() => OnClick(refsContext.servicesRef)}>
+      <Menu.Item key="1" onClick={() => OnClick(refsContext.servicesRef)}>
         {t(formattedMessages.services)}
       </Menu.Item>
-      <Menu.Item key="3" onClick={() => OnClick(refsContext.projectsRef)}>
+      <Menu.Item key="2" onClick={() => OnClick(refsContext.projectsRef)}>
         {t(formattedMessages.projects)}
+      </Menu.Item>
+      <Menu.Item key="3" onClick={() => OnClick(refsContext.skillsRef)}>
+        {t(formattedMessages.skills)}
       </Menu.Item>
       <Menu.Item key="4" onClick={() => OnClick(refsContext.contactMeRef)}>
         {t(formattedMessages.contact)}
@@ -87,7 +86,11 @@ function Navbar() {
   return (
     <Layout className="!bg-transparent">
       <Header className="!bg-transparent !p-0 !mx-0 navbar-header">
-        <Row justify="space-between" align="middle" className="!flex-nowrap">
+        <Row
+          justify="space-between"
+          align="middle"
+          className="!flex-nowrap gap-14"
+        >
           <span className="font-inter font-semibold text-2xl sm:text-3xl lg:text-4xl text-white block ">
             Ibrahim.
           </span>

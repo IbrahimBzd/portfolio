@@ -18,12 +18,13 @@ export const formattedMessages = Object.freeze({
   search: 'search',
   title: 'title',
   my: 'general.my',
+  visit: 'general.visit',
 
   // navbar
-  home: `${scopes[0]}.home`,
   about: `${scopes[0]}.about`,
   services: `${scopes[0]}.services`,
   projects: `${scopes[0]}.projects`,
+  skills: `${scopes[0]}.skills`,
   contact: `${scopes[0]}.contact`,
 
   // home

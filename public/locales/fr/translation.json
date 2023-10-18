@@ -1,13 +1,14 @@
 {
   "general": {
-    "my": "Mes"
+    "my": "Mes",
+    "visit": "Visiter"
   },
   "navbar": {
-    "home": "Accueil",
     "about": "A propos",
     "services": "Services",
     "projects": "Projects",
-    "contact": "Contactez mois"
+    "skills": "Skills",
+    "contact": "Contactez moi"
   },
   "home": {
     "hello": "Bonjour, C'est moi",
@@ -19,7 +20,7 @@
   "about": {
     "hello": "Bonjour",
     "firstParag": ", Je m'appelle Ibrahim Drissi El Bouzaidi, un ",
-    "secondParag": "passionné en quête perpétuelle de création d’expériences numériques innovantes. Avec une base solide à la fois en esthétique front-end et en fonctionnalités back-end, je suis motivé par le désir de créer des solutions Web qui non seulement ont fière allure, mais qui fonctionnent également à merveille. Mon parcours dans le monde de la technologie a été fascinant, rempli d’apprentissage et d’exploration continus. Je m'épanouit dans les défis, la résolution de problèmes et le fait de rester à jour avec le paysage technologique en constante évolution."
+    "secondParag": "passionné en quête perpétuelle de création d’expériences numériques innovantes. Avec une base solide à la fois en esthétique front-end et en fonctionnalités back-end, je suis motivé par le désir de créer des solutions Web qui non seulement ont fière allure, mais qui fonctionnent également à merveille."
   },
   "services": {
     "title1": "Développement d'applications Web:",
@@ -35,7 +36,6 @@
     "title6": "Consultation et collaboration:",
     "content6": "Je crois au développement collaboratif. Je suis ici pour écouter vos idées, vous fournir des informations et travailler en étroite collaboration avec vous pour transformer votre vision en réalité numérique. Discutons de votre projet, résolvons les problèmes et trouvons des solutions ensemble.",
     "title7": "Design:",
-    "content7": "En tant que designer dévoué et passionné, je suis fier d'offrir un service de conception sur mesure adapté pour répondre aux besoins distincts de chaque client. Avec un sens aigu du détail et une compréhension intrinsèque des nuances esthétiques, je travaille en étroite collaboration avec vous pour donner vie à votre vision. Que vous soyez attiré par l'élégance contemporaine, les motifs classiques ou les innovations avant-gardistes, mon engagement est de traduire vos idées en designs qui captivent et inspirent."
-
+    "content7": "En tant que designer dévoué et passionné, je suis fier d'offrir un service de conception sur mesure adapté pour répondre aux besoins distincts de chaque client. Avec un sens aigu du détail et une compréhension intrinsèque des nuances esthétiques, je travaille en étroite collaboration avec vous pour donner vie à votre vision."
   }
 }

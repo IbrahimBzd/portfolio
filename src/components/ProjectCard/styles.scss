@@ -1,0 +1,9 @@
+.project-card {
+    img {
+      transition: 0.5s;
+      filter: brightness(35%);
+      &:hover{
+        filter: brightness(100%);
+    }
+  }
+}
