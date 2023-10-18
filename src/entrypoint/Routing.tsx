@@ -1,7 +1,8 @@
 import * as React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { PortfolioRoute } from '../types';
-import { PageRouteConfig } from '../pages/rout';
+import { PageRouteConfig } from '../pages/Home/route';
+import { ContactPageRouteConfig } from '../pages/Contact/route';
 
 type AppRoutingProps = {
   routes: string;
@@ -19,7 +20,10 @@ function makeRoutePropsFromConfig(config: PortfolioRoute<any>) {
 }
 
 const GLOBAL_ROUTE_CONFIG = Object.freeze({
-  APP_ROUTES_CONFIG: [makeRoutePropsFromConfig(PageRouteConfig)],
+  APP_ROUTES_CONFIG: [
+    makeRoutePropsFromConfig(PageRouteConfig),
+    makeRoutePropsFromConfig(ContactPageRouteConfig),
+  ],
 });
 
 export default function AppRouting({ routes }: AppRoutingProps) {

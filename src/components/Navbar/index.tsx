@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
 import { Layout, Menu, Button, Drawer, Row } from 'antd';
 import { Context } from '../../core/Context';
 import './styles.scss';
 import { formattedMessages } from '../../utils/formattedMessages';
 import MenuIcon from '../../assets/Icons/Menu';
 import ArrowUp from '../../assets/Icons/ArrowUp';
+import privateRoutes from '../../entrypoint/ProtectedApp/privateRoutes';
 
 const { Header } = Layout;
 
@@ -17,6 +19,7 @@ function NavbarManu({
   setVisible?: React.Dispatch<React.SetStateAction<boolean>>;
 }) {
   const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
   const changeLanguageHandler = () => {
     switch (i18n.language) {
       case 'en':
@@ -57,14 +60,17 @@ function NavbarManu({
       <Menu.Item key="3" onClick={() => OnClick(refsContext.skillsRef)}>
         {t(formattedMessages.skills)}
       </Menu.Item>
-      <Menu.Item key="4" onClick={() => OnClick(refsContext.contactMeRef)}>
+      <Menu.Item
+        key="4"
+        onClick={() => {
+          navigate(privateRoutes.app.contactPath);
+        }}
+      >
         {t(formattedMessages.contact)}
       </Menu.Item>
       <Menu.Item key="5" className="lang" onClick={changeLanguageHandler}>
-        <span className="font-inter !font-bold text-lg md:text-base">
-          {`${i18n.language} `}
-        </span>
-        <span className="font-inter !font-bold text-lg md:text-base">
+        <span className="font-inter !font-bold ">{`${i18n.language} `}</span>
+        <span className="font-inter !font-bold ">
           /{i18n.language === 'fr' ? ' en' : ' fr '}
         </span>
       </Menu.Item>

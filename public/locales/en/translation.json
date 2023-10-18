@@ -1,6 +1,7 @@
 {
   "general": {
     "my": "My",
+    "me": "Me",
     "visit": "Visit"
   },
   "navbar": {
@@ -37,5 +38,8 @@
     "content6": "I believe in collaborative development. I'm here to listen to your ideas, provide insights, and work closely with you to transform your vision into a digital reality. Let's discuss your project, troubleshoot issues, and find solutions together.",
     "title7": "Design:",
     "content7": "As a dedicated and passionate designer, I pride myself on offering a bespoke design service tailored to meet the distinct needs of each client. With a keen eye for detail and an intrinsic understanding of aesthetic nuances, I work closely with you to bring your vision to life."
+  },
+  "contact": {
+    "contactTitle": "Contact"
   }
 }

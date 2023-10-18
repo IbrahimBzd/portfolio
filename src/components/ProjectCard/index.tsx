@@ -19,8 +19,8 @@ function ProjectCard({
       className="!w-[290px] rounded-[0px] text-center bg-secondary border border-primary
       flex flex-col items-center justify-start gap-6 h-auto project-card"
     >
-      <img src={img} alt={title} className="h-3/5 w-full object-cover" />
-      <div className="h-2/5 flex flex-col w-full justify-between items-center gap-2 px-8 pb-12">
+      <img src={img} alt={title} className="h-1/2 w-full object-cover" />
+      <div className="h-1/2 flex flex-col w-full justify-between items-center gap-2 px-8 pb-6">
         <div className="flex flex-col w-full justify-between items-center px-8 gap-2">
           <span className="text-neutral-500">{date}</span>
           <span
@@ -30,13 +30,11 @@ function ProjectCard({
             {title}
           </span>
         </div>
-        <CustomButton
-          text={
-            <a href="/" target="_blank">
-              {t(formattedMessages.visit)}
-            </a>
-          }
-        />
+        <CustomButton>
+          <a href="/" target="_blank">
+            {t(formattedMessages.visit)}
+          </a>
+        </CustomButton>
       </div>
     </div>
   );

@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { useTranslation } from 'react-i18next';
-import CustomCard from '../../../components/ServiceCard';
-import { formattedMessages } from '../../../utils/formattedMessages';
-import ResponsiveCarousel from '../../../components/ResponsiveServicesCarousel';
+import CustomCard from '../../../../components/ServiceCard';
+import { formattedMessages } from '../../../../utils/formattedMessages';
+import ResponsiveCarousel from '../../../../components/ResponsiveServicesCarousel';
 
 function Services({ reference }) {
   const { t } = useTranslation();
@@ -47,7 +47,7 @@ function Services({ reference }) {
   return (
     <div ref={reference} className="flex flex-col justify-start items-center ">
       <div
-        className="px-5 sm:px-16 md:px-28 lg:px-36 xl:px-44 py-10 sm:py-20 !pb-20
+        className="px-5 xl:px-44 py-10 sm:py-20 !pb-20
         w-full flex flex-col justify-start items-center gap-0 sm:gap-10"
       >
         <span className="my-6 text-3xl lg:text-5xl text-white font-inter font-black tracking-wider">

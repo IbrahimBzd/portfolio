@@ -1,13 +1,15 @@
 import * as React from 'react';
 import './styles.scss';
-import Navbar from '../components/Navbar';
-import { Context } from '../core/Context';
+import Navbar from '../../components/Navbar';
+import { Context } from '../../core/Context';
 import Home from './components/home';
 import About from './components/about';
 import Services from './components/services';
 import Projects from './components/projects';
-import { ElementOnScreenAnimation } from '../components/ElementOnScreenAnimation';
-import BackgrounderComponent from '../components/BackgroundedCompnent';
+import { ElementOnScreenAnimation } from '../../components/ElementOnScreenAnimation';
+import BackgrounderComponent from '../../components/BackgroundedCompnent';
+import Skills from './components/skills';
+import Footer from '../../components/Footer';
 
 function Page() {
   const skillsRef = React.useRef();
@@ -31,7 +33,7 @@ function Page() {
     <Context.Provider value={contextMemo}>
       <div>
         <div className="z-10">
-          <div className="px-5 sm:px-16 md:px-28 lg:px-36 xl:px-44 pt-5 sm:pt-10">
+          <div className="px-5 sm:px-16 lg:px-28 xl:px-44 pt-5 sm:pt-10">
             <Navbar />
             <Home />
           </div>
@@ -39,15 +41,14 @@ function Page() {
             <About reference={aboutRef} />
           </ElementOnScreenAnimation>
 
-          <ElementOnScreenAnimation>
-            <Services reference={servicesRef} />
-          </ElementOnScreenAnimation>
+          <Services reference={servicesRef} />
 
           <BackgrounderComponent>
-            <ElementOnScreenAnimation>
-              <Projects reference={projectsRef} />
-            </ElementOnScreenAnimation>
+            <Projects reference={projectsRef} />
           </BackgrounderComponent>
+
+          <Skills reference={skillsRef} />
+          <Footer />
         </div>
         <div className="main opacity-30 z-[-1]" />
       </div>

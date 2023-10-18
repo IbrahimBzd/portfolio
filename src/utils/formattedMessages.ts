@@ -1,4 +1,10 @@
-const scopes = Object.freeze(['navbar', 'home', 'about', 'services']);
+const scopes = Object.freeze([
+  'navbar',
+  'home',
+  'about',
+  'services',
+  'contact',
+]);
 
 export const formattedMessages = Object.freeze({
   error: 'error',
@@ -18,6 +24,7 @@ export const formattedMessages = Object.freeze({
   search: 'search',
   title: 'title',
   my: 'general.my',
+  me: 'general.me',
   visit: 'general.visit',
 
   // navbar
@@ -54,4 +61,7 @@ export const formattedMessages = Object.freeze({
   content6: `${scopes[3]}.content6`,
   title7: `${scopes[3]}.title7`,
   content7: `${scopes[3]}.content7`,
+
+  // contact
+  contactTitle: `${scopes[4]}.contactTitle`,
 });

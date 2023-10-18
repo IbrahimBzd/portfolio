@@ -1,13 +1,13 @@
 import * as React from 'react';
 import { useTranslation } from 'react-i18next';
-import { formattedMessages } from '../../../utils/formattedMessages';
-import aboutSticker from '../../../assets/svgs/aboutSticker.svg';
-import BackgrounderComponent from '../../../components/BackgroundedCompnent';
+import { formattedMessages } from '../../../../utils/formattedMessages';
+import aboutSticker from '../../../../assets/svgs/aboutSticker.svg';
+import BackgrounderComponent from '../../../../components/BackgroundedCompnent';
 
 export default function About({ reference }) {
   const { t } = useTranslation();
   return (
-    <div className="px-5 sm:px-16 md:px-28 lg:px-36 xl:px-44 py-0">
+    <div className="px-5 sm:px-16 lg:px-28 xl:px-44 py-0">
       <BackgrounderComponent>
         <div
           ref={reference}

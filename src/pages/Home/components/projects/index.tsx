@@ -1,24 +1,18 @@
 import * as React from 'react';
 import { useTranslation } from 'react-i18next';
-import { formattedMessages } from '../../../utils/formattedMessages';
-import ResponsiveCarousel from '../../../components/ResponsiveProjectsCarousel';
-import ProjectCard from '../../../components/ProjectCard';
-// @ts-ignore
-import projectImg from '../../../assets/imgs/project.jpg';
+import { formattedMessages } from '../../../../utils/formattedMessages';
+import ResponsiveCarousel from '../../../../components/ResponsiveProjectsCarousel';
+import ProjectCard from '../../../../components/ProjectCard';
+import projectImg from '../../../../assets/imgs/project.png';
 
 function Projects({ reference }) {
   const { t } = useTranslation();
   const services = Object.freeze([
     {
       img: projectImg,
-      title: 'E-comerce application',
-      date: '25 October, 2023',
+      title: 'My personal portfolio',
+      date: '18 October, 2023',
     },
-    { img: projectImg, title: 'Map web application', date: '25 October, 2023' },
-    { img: projectImg, title: 'Customer Portfolio', date: '25 October, 2023' },
-    { img: projectImg, title: 'Web application', date: '25 October, 2023' },
-    { img: projectImg, title: 'Web application', date: '25 October, 2023' },
-    { img: projectImg, title: 'Web application', date: '25 October, 2023' },
   ]);
 
   return (

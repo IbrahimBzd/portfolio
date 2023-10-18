@@ -1,5 +1,6 @@
 export default {
   app: Object.freeze({
-    path: '/*',
+    path: '/',
+    contactPath: '/contact',
   }),
 };
