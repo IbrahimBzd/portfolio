@@ -23,7 +23,9 @@ export default function Footer() {
           </div>
           <div className="w-full md:pt-6 flex justify-start md:justify-end items-start md:items-end">
             <CustomButton className="!bg-tertiary">
-              <a href="/contact">Let's talk</a>
+              <a href="https://wa.me/212619548744" target="_blank">
+                Let's talk
+              </a>
             </CustomButton>
           </div>
         </div>

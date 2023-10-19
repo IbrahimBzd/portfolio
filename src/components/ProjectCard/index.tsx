@@ -1,7 +1,5 @@
 import * as React from 'react';
-import { useTranslation } from 'react-i18next';
 import CustomButton from '../CustomButton';
-import { formattedMessages } from '../../utils/formattedMessages';
 import './styles.scss';
 
 function ProjectCard({
@@ -13,7 +11,6 @@ function ProjectCard({
   date: string;
   img: string;
 }) {
-  const { t } = useTranslation();
   return (
     <div
       className="!w-[290px] rounded-[0px] text-center bg-secondary border border-primary
@@ -25,14 +22,14 @@ function ProjectCard({
           <span className="text-neutral-500">{date}</span>
           <span
             className="text-white text-2xl xxl:text-3xl
-            font-dm-serif font-thin tracking-wider leading-relaxed"
+            font-dm-serif font-thin tracking-wider leading-normal"
           >
             {title}
           </span>
         </div>
-        <CustomButton>
+        <CustomButton className="!mt-3">
           <a href="/" target="_blank">
-            {t(formattedMessages.visit)}
+            Visit project
           </a>
         </CustomButton>
       </div>

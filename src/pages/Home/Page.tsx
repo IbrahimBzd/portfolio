@@ -9,6 +9,7 @@ import Projects from './components/projects';
 import BackgrounderComponent from '../../components/BackgroundedCompnent';
 import Skills from './components/skills';
 import Footer from '../../components/Footer';
+import Contact from './components/contact';
 
 function Page() {
   const skillsRef = React.useRef();
@@ -43,6 +44,8 @@ function Page() {
           <BackgrounderComponent>
             <Projects reference={projectsRef} />
           </BackgrounderComponent>
+
+          <Contact reference={contactMeRef} />
 
           <Skills reference={skillsRef} />
           <Footer />

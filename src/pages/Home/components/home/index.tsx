@@ -2,6 +2,8 @@ import * as React from 'react';
 import CustomButton from '../../../../components/CustomButton';
 import homeSticker from '../../../../assets/svgs/homeSticker.svg';
 import SocialMedia from '../../../../components/SocialMedia';
+// @ts-ignore
+import cv from '../../../../assets/pdfs/cv.pdf';
 
 function Home() {
   return (
@@ -24,7 +26,11 @@ function Home() {
           for technology and creativity converge.
         </p>
         <SocialMedia />
-        <CustomButton>Download CV</CustomButton>
+        <CustomButton>
+          <a href={cv} target="_blank">
+            Download CV
+          </a>
+        </CustomButton>
       </div>
       <div className="hidden md:flex items-center justify-end">
         <img

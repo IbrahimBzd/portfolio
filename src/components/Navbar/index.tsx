@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { Layout, Menu, Button, Drawer, Row } from 'antd';
 import { Context } from '../../core/Context';
 import './styles.scss';
 import MenuIcon from '../../assets/Icons/Menu';
 import ArrowUp from '../../assets/Icons/ArrowUp';
-import privateRoutes from '../../entrypoint/ProtectedApp/privateRoutes';
 
 const { Header } = Layout;
 
@@ -16,8 +14,6 @@ function NavbarManu({
   mode: any;
   setVisible?: React.Dispatch<React.SetStateAction<boolean>>;
 }) {
-  const navigate = useNavigate();
-
   const refsContext = React.useContext(Context);
 
   function OnClick(ref) {
@@ -46,12 +42,7 @@ function NavbarManu({
       <Menu.Item key="3" onClick={() => OnClick(refsContext.skillsRef)}>
         Skills
       </Menu.Item>
-      <Menu.Item
-        key="4"
-        onClick={() => {
-          navigate(privateRoutes.app.contactPath);
-        }}
-      >
+      <Menu.Item key="4" onClick={() => OnClick(refsContext.contactMeRef)}>
         Contact me
       </Menu.Item>
     </Menu>
