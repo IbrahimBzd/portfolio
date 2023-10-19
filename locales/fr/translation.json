@@ -1,0 +1,42 @@
+{
+  "general": {
+    "my": "Mes",
+    "me": "Moi",
+    "visit": "Visiter"
+  },
+  "navbar": {
+    "about": "A propos",
+    "services": "Services",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contactez moi"
+  },
+  "home": {
+    "hello": "Bonjour, C'est moi",
+    "andIm": "Et je suis un",
+    "fullstackDev": "Dévelopeur Fullstack",
+    "homeParag": "Bienvenue dans mon portfolio de développeur Fullstack, un espace où convergent ma passion pour la technologie et la créativité.",
+    "downloadCv": "Télécharger le CV"
+  },
+  "about": {
+    "hello": "Bonjour",
+    "firstParag": ", Je m'appelle Ibrahim Drissi El Bouzaidi, un ",
+    "secondParag": "passionné en quête perpétuelle de création d’expériences numériques innovantes. Avec une base solide à la fois en esthétique front-end et en fonctionnalités back-end, je suis motivé par le désir de créer des solutions Web qui non seulement ont fière allure, mais qui fonctionnent également à merveille."
+  },
+  "services": {
+    "title1": "Développement d'applications Web:",
+    "content1": "Je me spécialise dans la conception et la création d'applications Web personnalisées adaptées à vos besoins spécifiques. Du concept au déploiement, je veillerai à ce que votre application soit conviviale, visuellement attrayante et hautement fonctionnelle.",
+    "title2": "Développement front-end:",
+    "content2": "Créer des interfaces utilisateur (UI) captivantes est mon point fort. Je peux créer des conceptions frontales réactives, interactives et attrayantes à l'aide de technologies telles que HTML, CSS et JavaScript.",
+    "title3": "Développement back-end:",
+    "content3": "J'ai une expertise dans le développement côté serveur, garantissant le bon fonctionnement de vos applications Web. Avec Spring Boot et des bases de données comme PostgreSql ou MongoDB, Je peux gérer la logique du serveur, les bases de données et les API.",
+    "title4": "Développement Fullstack:",
+    "content4": "Je rassemble tout cela en proposant des services de développement de bout en bout. De l'interface utilisateur à la logique du serveur et tout le reste, je crée une expérience utilisateur transparente.",
+    "title5": "Conception adaptée aux mobiles:",
+    "content5": "À l’ère du mobile first, je peux rendre vos applications web et sites web responsive, offrant une expérience utilisateur optimale sur tous les appareils, y compris les smartphones et les tablettes.",
+    "title6": "Consultation et collaboration:",
+    "content6": "Je crois au développement collaboratif. Je suis ici pour écouter vos idées, vous fournir des informations et travailler en étroite collaboration avec vous pour transformer votre vision en réalité numérique. Discutons de votre projet, résolvons les problèmes et trouvons des solutions ensemble.",
+    "title7": "Design:",
+    "content7": "En tant que designer dévoué et passionné, je suis fier d'offrir un service de conception sur mesure adapté pour répondre aux besoins distincts de chaque client. Avec un sens aigu du détail et une compréhension intrinsèque des nuances esthétiques, je travaille en étroite collaboration avec vous pour donner vie à votre vision."
+  }
+}
