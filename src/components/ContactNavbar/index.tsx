@@ -1,16 +1,13 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import { Layout, Row } from 'antd';
-import { formattedMessages } from '../../utils/formattedMessages';
-import './styles.scss';
 import privateRoutes from '../../entrypoint/ProtectedApp/privateRoutes';
 import CustomButton from '../CustomButton';
+import './styles.scss';
 
 const { Header } = Layout;
 
 function Navbar() {
-  const { t } = useTranslation();
   const navigate = useNavigate();
 
   return (
@@ -31,7 +28,7 @@ function Navbar() {
                 navigate(privateRoutes.app.path);
               }}
             >
-              {t(formattedMessages.homeHello)}
+              Back to home
             </CustomButton>
           </div>
         </Row>

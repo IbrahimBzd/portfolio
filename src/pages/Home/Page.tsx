@@ -6,7 +6,6 @@ import Home from './components/home';
 import About from './components/about';
 import Services from './components/services';
 import Projects from './components/projects';
-import { ElementOnScreenAnimation } from '../../components/ElementOnScreenAnimation';
 import BackgrounderComponent from '../../components/BackgroundedCompnent';
 import Skills from './components/skills';
 import Footer from '../../components/Footer';
@@ -37,9 +36,7 @@ function Page() {
             <Navbar />
             <Home />
           </div>
-          <ElementOnScreenAnimation>
-            <About reference={aboutRef} />
-          </ElementOnScreenAnimation>
+          <About reference={aboutRef} />
 
           <Services reference={servicesRef} />
 

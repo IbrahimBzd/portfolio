@@ -1,7 +1,7 @@
 import * as React from 'react';
 // @ts-ignore
 import ResponsiveCarousel from '../../../../components/ResponsiveSkillsCarousel';
-import { skills } from '../../data/skills';
+import { skills } from '../../data';
 
 function Skills({ reference }) {
   return (

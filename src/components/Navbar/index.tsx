@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
-import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import { Layout, Menu, Button, Drawer, Row } from 'antd';
 import { Context } from '../../core/Context';
 import './styles.scss';
-import { formattedMessages } from '../../utils/formattedMessages';
 import MenuIcon from '../../assets/Icons/Menu';
 import ArrowUp from '../../assets/Icons/ArrowUp';
 import privateRoutes from '../../entrypoint/ProtectedApp/privateRoutes';
@@ -18,20 +16,8 @@ function NavbarManu({
   mode: any;
   setVisible?: React.Dispatch<React.SetStateAction<boolean>>;
 }) {
-  const { t, i18n } = useTranslation();
   const navigate = useNavigate();
-  const changeLanguageHandler = () => {
-    switch (i18n.language) {
-      case 'en':
-        i18n.changeLanguage('fr');
-        window.location.reload();
-        return;
-      default:
-        i18n.changeLanguage('en');
-        window.location.reload();
-        break;
-    }
-  };
+
   const refsContext = React.useContext(Context);
 
   function OnClick(ref) {
@@ -49,16 +35,16 @@ function NavbarManu({
       mode={mode}
     >
       <Menu.Item key="0" onClick={() => OnClick(refsContext.aboutRef)}>
-        {t(formattedMessages.about)}
+        About
       </Menu.Item>
       <Menu.Item key="1" onClick={() => OnClick(refsContext.servicesRef)}>
-        {t(formattedMessages.services)}
+        Services
       </Menu.Item>
       <Menu.Item key="2" onClick={() => OnClick(refsContext.projectsRef)}>
-        {t(formattedMessages.projects)}
+        Projects
       </Menu.Item>
       <Menu.Item key="3" onClick={() => OnClick(refsContext.skillsRef)}>
-        {t(formattedMessages.skills)}
+        Skills
       </Menu.Item>
       <Menu.Item
         key="4"
@@ -66,13 +52,7 @@ function NavbarManu({
           navigate(privateRoutes.app.contactPath);
         }}
       >
-        {t(formattedMessages.contact)}
-      </Menu.Item>
-      <Menu.Item key="5" className="lang" onClick={changeLanguageHandler}>
-        <span className="font-inter !font-bold ">{`${i18n.language} `}</span>
-        <span className="font-inter !font-bold ">
-          /{i18n.language === 'fr' ? ' en' : ' fr '}
-        </span>
+        Contact me
       </Menu.Item>
     </Menu>
   );

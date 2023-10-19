@@ -1,12 +1,9 @@
 import * as React from 'react';
-import { useTranslation } from 'react-i18next';
-import { formattedMessages } from '../../../../utils/formattedMessages';
 import ResponsiveCarousel from '../../../../components/ResponsiveProjectsCarousel';
 import ProjectCard from '../../../../components/ProjectCard';
 import projectImg from '../../../../assets/imgs/project.png';
 
 function Projects({ reference }) {
-  const { t } = useTranslation();
   const services = Object.freeze([
     {
       img: projectImg,
@@ -22,8 +19,7 @@ function Projects({ reference }) {
     >
       <div className="px-5 md:px-12 lg:px-24 py-5 sm:py-10 w-full flex flex-col justify-start items-center gap-10">
         <span className="text-3xl lg:text-5xl text-white font-inter font-black tracking-wider">
-          {t(formattedMessages.my)}{' '}
-          <span className="text-primary">{t(formattedMessages.projects)}</span>
+          My <span className="text-primary">Projects</span>
         </span>
 
         <ResponsiveCarousel>

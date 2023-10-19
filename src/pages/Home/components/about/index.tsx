@@ -1,11 +1,8 @@
 import * as React from 'react';
-import { useTranslation } from 'react-i18next';
-import { formattedMessages } from '../../../../utils/formattedMessages';
 import aboutSticker from '../../../../assets/svgs/aboutSticker.svg';
 import BackgrounderComponent from '../../../../components/BackgroundedCompnent';
 
 export default function About({ reference }) {
-  const { t } = useTranslation();
   return (
     <div className="px-5 sm:px-16 lg:px-28 xl:px-44 py-0">
       <BackgrounderComponent>
@@ -26,13 +23,16 @@ export default function About({ reference }) {
         lg:!leading-[1.7] xxl:leading-loose xxl:pl-0 xxl:pr-20"
           >
             <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xxl:text-7xl inline-block">
-              {t(formattedMessages.hello)}
+              Hello
             </span>
-            {t(formattedMessages.firstParag)}{' '}
+            , I'm Ibrahim Drissi El Bouzaidi, a passionate{' '}
             <span className="text-primary font-semibold">
-              {t(formattedMessages.fullstackDev)}
+              Fullstack Developer
             </span>{' '}
-            {t(formattedMessages.secondParag)}
+            on a perpetual quest to create innovative digital experiences. With
+            a strong foundation in both front-end aesthetics and back-end
+            functionality, I'm driven by the desire to build web solutions that
+            not only look great but also perform awlessly.
           </p>
         </div>
       </BackgrounderComponent>

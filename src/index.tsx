@@ -5,7 +5,6 @@ import App from './entrypoint';
 import reportWebVitals from './reportWebVitals';
 import 'antd/dist/antd.less';
 import './overrides.less';
-import './i18n';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
