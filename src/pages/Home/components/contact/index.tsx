@@ -49,7 +49,7 @@ export default function Contact({ reference }) {
         Contact <span className="text-primary">me</span>
       </span>
       <form
-        action="https://formsubmit.co/gagelo9995@ustorp.com"
+        action="https://formsubmit.co/ibrahimdrissi05@gmail.com"
         method="POST"
         className="w-full flex flex-col md:grid grid-cols-2 gap-x-8 xl:gap-x-16 gap-y-3
         lg:gap-y-6 max-w-[1100px] bg-tertiary px-6 sm:px-16 py-6 sm:py-12"
